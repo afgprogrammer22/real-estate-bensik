@@ -1,0 +1,48 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 6rem;
+
+  &__logo {
+    margin-right: 3.2rem;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    list-style: none;
+    flex: 1;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    a {
+      color: #4f5361;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    &-login {
+      border: none;
+      background: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.875rem;
+      color: #0f1b4c;
+    }
+
+    &-register {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.875rem;
+      background: #0f1b4c;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+  }
+}
