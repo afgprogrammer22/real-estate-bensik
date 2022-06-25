@@ -1,48 +1,121 @@
 .navbar {
-  width: 100%;
   display: flex;
   align-items: center;
-  padding: 2rem 6rem;
+  width: 100%;
+  height: 6vh;
+  padding: 2rem 5rem;
 
-  &__logo {
-    margin-right: 3.2rem;
-  }
-
-  &__links {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    list-style: none;
+  &__items {
     flex: 1;
-    flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif;
-    a {
-      color: #4f5361;
-      font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 4rem;
+
+    &-links {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      a {
+        color: #4f5361;
+        font-size: 14px;
+      }
+    }
+
+    &-buttons {
+      flex-wrap: wrap;
+
+      .login-btn {
+        margin-right: 1rem;
+        font-size: 14px;
+      }
+
+      .register-btn {
+        font-size: 14px;
+        background: #0f1b4c;
+        color: #fff;
+        padding: 0.4rem 0.8rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+// toggle menu (do not show) > 900px
+
+.open-menu {
+  display: none;
+}
+
+.navbar__mobile {
+  margin-left: auto;
+
+  &-menu {
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(18, 42, 253, 0.867);
+    cursor: pointer;
+
+    svg {
+      width: 70%;
+      height: 70%;
+      color: #fff;
     }
   }
 
-  &__buttons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+  .mobile__links {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: rgb(255, 255, 255);
 
-    &-login {
-      border: none;
-      background: none;
-      font-family: 'Poppins', sans-serif;
-      font-size: 0.875rem;
-      color: #0f1b4c;
+    svg {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      color: rgba(18, 41, 253, 0.678);
+      font-size: 24px;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin: 0.5rem 1rem;
     }
 
-    &-register {
-      font-family: 'Poppins', sans-serif;
-      font-size: 0.875rem;
-      background: #0f1b4c;
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 8px;
+    ul {
+      list-style-type: none;
+      margin: 5rem 2rem;
+
+      li {
+        padding: 1rem 0;
+
+        a {
+          font-size: 1.3rem;
+          color: #4f5361;
+        }
+      }
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+// show toggle menu < 900px
+@media screen and (max-width: 900px) {
+  .navbar__items {
+    display: none;
   }
 }
