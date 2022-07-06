@@ -1,0 +1,45 @@
+.featured {
+  width: 100%;
+  background-color: #f5fafe;
+  padding: 3rem 5rem;
+
+  &__text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    h2 {
+      color: #000339;
+      font-weight: 600;
+      line-height: 35px;
+    }
+
+    p {
+      color: #5a6473;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    .link {
+      color: #0689ff;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 18px;
+
+      p {
+        color: inherit;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .cards {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

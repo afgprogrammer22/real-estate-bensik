@@ -1,0 +1,46 @@
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+
+  .details {
+    // padding: 0 1rem;
+    margin: 1rem;
+
+    .price {
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+
+    .intro {
+      font-size: 14px;
+      font-weight: 500;
+      color: #a3a6ab;
+      margin: 5px 0;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      div {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 6px;
+        }
+
+        span {
+          color: #444444;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
