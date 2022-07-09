@@ -1,10 +1,10 @@
 .header {
   background: #e6f0ff;
-  width: 100%;
-  height: 100%;
 }
 
 .hero {
+  width: 100%;
+  height: 100%;
   padding: 0 5rem;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@
       border-radius: 12px;
       margin-top: 2rem;
       cursor: pointer;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
   }
 
